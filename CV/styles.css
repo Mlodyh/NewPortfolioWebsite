@@ -68,7 +68,7 @@ a {
   margin-top: 15%;
 }
 
-.title {
+h1 {
   font-size: 4rem;
   font-weight: bold;
   text-align: center;
@@ -81,7 +81,7 @@ a {
   text-shadow: 2px 2px 2px black;
 }
 
-.hello {
+h2 {
   font-size: 2.5rem;
   margin-top: 0.5rem;
   text-align: center;
@@ -125,6 +125,19 @@ a {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+.cv {
+  margin-top: 1.5rem;
+}
+
+.download-button {
+  font-size: 2.2rem;
+  padding: 1.2rem 2rem;
+}
+
+.download-button:hover {
+  color: var(--main-purple);
+}
+
 .brake {
   background-color: var(--alt-bg);
   display: flex;
@@ -137,6 +150,10 @@ a {
   align-items: center;
   text-shadow: 0.2rem 0.2rem 0.2rem black;
   overflow: hidden;
+}
+
+.brake-text {
+  display: none;
 }
 
 .brake_one,
@@ -229,15 +246,15 @@ section .wave.wave4 {
 .technology {
   min-width: 40rem;
   max-width: 60rem;
-  height: 30rem;
+  height: 32rem;
   padding: 1rem;
+  font-size: 2.2rem;
   border: 0.2rem solid white;
   border-radius: 1.5rem;
   margin: 0 2.5rem;
 }
 
 .technology ul {
-  font-size: 2.2rem;
   columns: 2;
   text-align: center;
 }
@@ -254,7 +271,7 @@ section .wave.wave4 {
 .aboutme {
   min-width: 40rem;
   max-width: 60rem;
-  height: 30rem;
+  height: 32rem;
   padding: 1rem;
   text-align: center;
   font-size: 2.2rem;
@@ -263,11 +280,28 @@ section .wave.wave4 {
   margin: 0 2.5rem;
 }
 
+.readmore {
+  background-color: var(--alt-bg);
+  border: none;
+  border-radius: 1rem;
+  color: var(--main-purple);
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  font-size: 2.2rem;
+  padding: 1rem;
+  margin: 5rem auto;
+}
+
+.readmore:hover {
+  color: var(--main-bg);
+}
+
 .projects {
   margin-top: 10rem;
 }
 
-.portfoliotitle {
+h3 {
   display: flex;
   justify-content: center;
   font-size: 3rem;
@@ -296,8 +330,7 @@ section .wave.wave4 {
 }
 
 .profesk2,
-.spanawynos,
-.cos {
+.spanawynos {
   background-color: var(--alt-bg);
   border-radius: 2.5rem;
   cursor: pointer;
@@ -307,8 +340,7 @@ section .wave.wave4 {
 }
 
 .profesk2:hover,
-.spanawynos:hover,
-.cos:hover {
+.spanawynos:hover {
   transform: scale(0.9);
 }
 
@@ -334,9 +366,9 @@ footer {
 section .wavefooter {
   margin-bottom: -5rem;
   width: 100vw;
-  height: 6.5rem;
+  height: 9.5rem;
   background: url(wavefooter.png);
-  background-size: 100rem 6.5rem;
+  background-size: 100rem 9.5rem;
   position: absolute;
 }
 
@@ -357,7 +389,7 @@ section .wavefooter.wavefooter2 {
 section .wavefooter.wavefooter3 {
   animation: animate 20s linear infinite;
   z-index: 1200;
-  opacity: 0.2;
+  opacity: 0.4;
   animation-delay: -2s;
 }
 
@@ -366,4 +398,189 @@ section .wavefooter.wavefooter4 {
   z-index: 1200;
   opacity: 0.5;
   animation-delay: -5s;
+}
+
+#logofooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.socialmedia button {
+  background-color: var(--main-bg);
+  border: none;
+  border-radius: 1rem;
+  font-size: 2.2rem;
+  margin: 0 1.5rem;
+  padding: 1rem;
+  z-index: 4944;
+}
+
+.socialmedia button a:hover {
+  color: var(--alt-bg);
+}
+
+@media (max-width: 851px) {
+  #aboutLink,
+  #githubLink {
+    display: none;
+  }
+
+  body {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 1.5rem;
+    overflow-x: hidden;
+  }
+
+  #about {
+    display: block;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .skills {
+    margin-top: -2rem;
+  }
+
+  .aboutme,
+  .technology {
+    font-size: 1.8rem;
+    margin: 8rem auto;
+    min-width: 20rem;
+    max-width: 35rem;
+  }
+
+  .aboutme {
+    font-size: 2rem;
+  }
+
+  .technology ul {
+    columns: 1;
+  }
+
+  li {
+    display: block;
+  }
+
+  .home_section {
+    width: 94vw;
+    margin-top: 25%;
+  }
+
+  .cv {
+    margin-bottom: 5rem;
+  }
+
+  .brake {
+    display: block;
+    margin-top: 10vh;
+    margin-left: -4vw;
+    padding: 1rem;
+    height: 30vh;
+    width: 100vw;
+  }
+
+  .brake_one,
+  .brake_two,
+  .brake_three {
+    margin-top: 1.3rem;
+    position: relative;
+    font-size: 1.9rem;
+  }
+
+  section .wave {
+    height: 9.5rem;
+    background-size: 100rem 9.5rem;
+  }
+
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profesk2,
+  .spanawynos {
+    margin-top: 6vh;
+    width: 50vw;
+    height: 30vh;
+  }
+
+  .brakefooter {
+    margin-left: -3.8vw;
+    height: 7vh;
+  }
+
+  .socialmedia button {
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+    font-size: 1.9rem;
+  }
+
+  footer {
+    margin-top: 12vh;
+  }
+
+  section .wavefooter {
+    height: 6rem;
+  }
+
+  @media screen and (min-width: 530px) and (max-width: 851px) {
+    #aboutLink,
+    #githubLink {
+      display: none;
+    }
+
+    .home_section {
+      margin-top: 10%;
+    }
+  }
+}
+
+@media screen and (min-width: 852px) and (max-width: 1354px) {
+  #aboutLink,
+  #githubLink {
+    display: none;
+  }
+
+  .home_section {
+    width: 50vw;
+  }
+
+  .brake_one,
+  .brake_two,
+  .brake_three {
+    font-size: 1.85rem;
+  }
+
+  .aboutme,
+  .technology {
+    font-size: 2rem;
+    margin: 8rem auto;
+    min-width: 20rem;
+    max-width: 35rem;
+    height: 35rem;
+  }
+
+  .technology ul {
+    columns: 1;
+  }
+
+  .skills {
+    margin-top: -1rem;
+  }
+
+  .aboutme {
+    font-size: 2.2rem;
+  }
 }

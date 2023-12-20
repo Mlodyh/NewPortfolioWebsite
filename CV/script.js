@@ -16,7 +16,7 @@ setInterval(updateCounter, 86400000);
 // section
 
 document.addEventListener("DOMContentLoaded", function () {
-  const links = document.querySelectorAll("nav a");
+  const links = document.querySelectorAll("nav a, .hireme a");
 
   links.forEach(function (link) {
     link.addEventListener("click", function (e) {
